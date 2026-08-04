@@ -31,14 +31,12 @@ jobs:
             os: ubuntu-latest
             use_cross: true
           - target: x86_64-apple-darwin
-            os: macos-13
+            os: macos-15
             use_cross: false
           - target: aarch64-apple-darwin
-            os: macos-14
+            os: macos-15
             use_cross: false
-          - target: x86_64-pc-windows-msvc
-            os: windows-latest
-            use_cross: false
+          # lsof를 사용하므로 네이티브 Windows는 지원하지 않습니다 (WSL은 리눅스 바이너리로 동작).
 
     steps:
       - uses: actions/checkout@v4
