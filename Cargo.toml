@@ -6,3 +6,7 @@ edition = "2024"
 [dependencies]
 inquire = "0.7.0"
 sysinfo = "0.30.0"
+
+[[bin]]
+name = "portkill"
+path = "src/main.rs"

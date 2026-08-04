@@ -17,40 +17,22 @@
 - [Rust & Cargo](https://www.rust-lang.org/tools/install)가 설치되어 있어야 합니다.
 - **macOS** 또는 **Linux** 환경을 권장합니다. (시스템 포트 조회를 위해 내부적으로 `lsof` 명령어를 활용합니다)
 
-### 설치 및 빌드 (Installation)
-
-1. 새 프로젝트를 생성하고 해당 디렉토리로 이동합니다.
+### 설치 (Installation)
 
 ```bash
-cargo new port_killer
-cd port_killer
+curl -sSf https://raw.githubusercontent.com/owner/port_killer/main/install.sh | sh
 ```
 
-2. `Cargo.toml` 파일의 `[dependencies]` 아래에 다음 라이브러리를 추가합니다.
-
-```toml
-[dependencies]
-inquire = "0.7.0"
-sysinfo = "0.30.0"
-```
-
-3. 프로젝트를 빌드합니다.
-
-```bash
-cargo build --release
-```
 
 ## 💻 사용법 (Usage)
 
 터미널에서 아래 명령어를 실행하여 프로그램을 시작합니다.
 
 ```bash
-cargo run
-# 또는 빌드된 바이너리 직접 실행
-./target/release/port_killer
+portkill
 ```
 
-> **💡 권한 관련 팁 (Tip):** 시스템 루트 권한(예: 웹 서버 포트 80, 443 등)으로 실행 중인 특정 프로세스를 조회하고 안전하게 종료하려면 `sudo` 권한이 필요할 수 있습니다. (`sudo ./target/release/port_killer`)
+> **💡 권한 관련 팁 (Tip):** 시스템 루트 권한(예: 웹 서버 포트 80, 443 등)으로 실행 중인 특정 프로세스를 조회하고 안전하게 종료하려면 `sudo` 권한이 필요할 수 있습니다. (`sudo portkill`)
 
 ### 🕹️ 조작 가이드
 
