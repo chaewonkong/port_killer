@@ -6,8 +6,7 @@
 
 set -eu
 
-# TODO: 실제 GitHub owner/repo로 바꾸세요.
-REPO="owner/port_killer"
+REPO="chaewonkong/port_killer"
 BINARY_NAME="portkill"
 INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 
