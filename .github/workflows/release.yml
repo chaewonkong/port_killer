@@ -66,14 +66,6 @@ jobs:
           tar czf ../../../${{ env.BINARY_NAME }}-${{ matrix.target }}.tar.gz ${{ env.BINARY_NAME }}
           cd -
 
-      - name: Package (Windows)
-        if: matrix.os == 'windows-latest'
-        shell: pwsh
-        run: |
-          cd target/${{ matrix.target }}/release
-          Compress-Archive -Path "${{ env.BINARY_NAME }}.exe" -DestinationPath "../../../${{ env.BINARY_NAME }}-${{ matrix.target }}.zip"
-          cd -
-
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
