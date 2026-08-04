@@ -14,7 +14,6 @@
 
 ### 사전 요구 사항 (Prerequisites)
 
-- [Rust & Cargo](https://www.rust-lang.org/tools/install)가 설치되어 있어야 합니다.
 - **macOS** 또는 **Linux** 환경을 권장합니다. (시스템 포트 조회를 위해 내부적으로 `lsof` 명령어를 활용합니다)
 
 ### 설치 (Installation)
