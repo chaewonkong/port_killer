@@ -19,7 +19,7 @@
 ### 설치 (Installation)
 
 ```bash
-curl -sSf https://raw.githubusercontent.com/owner/port_killer/main/install.sh | sh
+curl -sSf https://raw.githubusercontent.com/chaewonkong/port_killer/refs/heads/main/install.sh | sh
 ```
 
 
